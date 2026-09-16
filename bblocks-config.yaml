@@ -30,8 +30,8 @@ description: |
   - **Agent** — profile of `ogc.ogc-utils.prov-agent`.
   - **Provenance (bundle)** — built on the `ogc.ogc-utils.prov` provenance chain.
 
-baseURL: https://example.org/bblocks-provenance/
-gitHubBaseURL: https://github.com/your-org/bblocks-provenance/
+baseURL: https://geolabs.github.io/bblocks-generic-provenance-profile/
+gitHubBaseURL: https://github.com/GeoLabs/bblocks-generic-provenance-profile/
 license: CC-BY-4.0
 
 imports:
