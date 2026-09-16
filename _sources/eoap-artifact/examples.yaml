@@ -1,0 +1,5 @@
+- title: OSPD EO artifact
+  description: An output artifact linked to the process run that produced it, with a checksum for integrity.
+  snippets:
+    - language: json
+      ref: examples/eoap-artifact.json

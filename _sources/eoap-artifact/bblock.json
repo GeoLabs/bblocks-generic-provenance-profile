@@ -1,0 +1,23 @@
+{
+  "name": "OSPD EO Artifact",
+  "abstract": "Provenance of a data artifact produced or consumed by an OSPD / EOAP workflow execution, profiling Wf4Ever wfprov:Artifact and adding optional Earth Observation typing (STAC item, bounding box).",
+  "status": "under-development",
+  "version": "0.1.0",
+  "dateOfLastChange": "2026-07-30",
+  "dateTimeAddition": "2026-07-30T12:00:00Z",
+  "itemClass": "schema",
+  "itemIdentifier": "ogc.bbr.provenance.eoap-artifact",
+  "profileOf": ["ogc.bbr.wf4ever.wfprov.Artifact"],
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfprov.Artifact",
+    "eoap.cct.stac",
+    "eoap.cct.bbox"
+  ],
+  "sources": [
+    { "title": "Workflow Provenance Ontology (wfprov)", "link": "http://purl.org/wf4ever/wfprov" },
+    { "title": "EOAP CWL Custom Types", "link": "https://github.com/eoap/schemas" }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": ["provenance", "prov", "wfprov", "eoap", "stac", "artifact", "ospd"]
+}

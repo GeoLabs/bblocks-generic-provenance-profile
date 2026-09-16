@@ -1,0 +1,8 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: |
+  A W3C PROV Entity for the OSPD / EOAP context. This is a thin profile that
+  builds on the canonical prov-schema entity sub-schema; it adds no new
+  constraints yet and can be specialised (e.g. STAC-typed entities using
+  eoap.cct.stac).
+allOf:
+  - $ref: bblocks://ogc.ogc-utils.prov-entity

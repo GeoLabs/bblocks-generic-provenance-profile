@@ -1,0 +1,12 @@
+{
+  "id": "urn:example:dataset:output-2026",
+  "type": "Artifact",
+  "role": "output",
+  "mediaType": "image/tiff; application=geotiff",
+  "wasOutputFrom": "urn:example:workflowrun:biomass-2026-07-30",
+  "describedByParameter": "urn:example:output:biomass-map",
+  "checksum": {
+    "algorithm": "SHA-256",
+    "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

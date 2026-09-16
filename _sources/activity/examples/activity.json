@@ -1,0 +1,9 @@
+{
+  "id": "urn:example:activity:processing-run-42",
+  "provType": "prov:Activity",
+  "name": "Biomass processing run #42",
+  "startedAtTime": "2026-07-30T10:00:00Z",
+  "endedAtTime": "2026-07-30T10:15:00Z",
+  "used": "urn:example:dataset:input-2025",
+  "wasAssociatedWith": "urn:example:agent:processing-service"
+}

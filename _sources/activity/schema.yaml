@@ -1,0 +1,7 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: |
+  A W3C PROV Activity for the OSPD / EOAP context. This is a thin profile that
+  builds on the canonical prov-schema activity sub-schema; it can be linked to
+  workflow-level provenance (e.g. ogc.bbr.wf4ever.wfprov.WorkflowRun).
+allOf:
+  - $ref: bblocks://ogc.ogc-utils.prov-activity

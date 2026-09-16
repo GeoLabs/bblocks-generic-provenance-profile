@@ -1,0 +1,16 @@
+{
+  "id": "urn:example:workflowrun:biomass-2026-07-30",
+  "type": "WorkflowRun",
+  "describedByWorkflow": "urn:example:workflow:biomass-mapping",
+  "wasEnactedBy": "urn:example:engine:calrissian",
+  "status": "successful",
+  "jobID": "a1b2c3d4-0000-4000-8000-000000000042",
+  "startedAtTime": "2026-07-30T10:00:00Z",
+  "endedAtTime": "2026-07-30T10:15:00Z",
+  "usedInput": [
+    { "id": "urn:example:dataset:input-2025" }
+  ],
+  "hadSubProcessRun": [
+    { "id": "urn:example:processrun:resample-42" }
+  ]
+}

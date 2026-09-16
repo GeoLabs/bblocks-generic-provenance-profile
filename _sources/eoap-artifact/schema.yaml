@@ -1,0 +1,35 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: |
+  A data artifact used or produced by an OSPD / EOAP workflow execution. It
+  profiles the Wf4Ever `wfprov:Artifact` (based on W3C PROV `prov:Entity`) and
+  adds optional Earth Observation typing so that a provenance artifact can carry
+  its STAC manifest (`stacItem`) and/or spatial extent (`bbox`) using the EOAP
+  custom types. The link back to the producing process run (`wasOutputFrom`) is
+  required so that data lineage is always explicit.
+allOf:
+  - $ref: bblocks://ogc.bbr.wf4ever.wfprov.Artifact
+  - type: object
+    required:
+      - id
+      - role
+      - wasOutputFrom
+      - checksum
+    properties:
+      role:
+        description: Role played by this artifact in the execution.
+        type: string
+        enum:
+          - input
+          - output
+          - intermediate
+        x-jsonld-id: https://example.org/bblocks-provenance/def/role
+      mediaType:
+        description: IANA media type of the artifact data (e.g. image/tiff; application=geotiff).
+        type: string
+        x-jsonld-id: https://example.org/bblocks-provenance/def/mediaType
+      stacItem:
+        description: STAC Item describing this artifact as an EO product.
+        $ref: bblocks://eoap.cct.stac
+      bbox:
+        description: Spatial extent of the artifact.
+        $ref: bblocks://eoap.cct.bbox

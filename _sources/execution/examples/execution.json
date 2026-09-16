@@ -1,0 +1,47 @@
+{
+  "run": {
+    "id": "urn:example:workflowrun:biomass-2026-07-30",
+    "type": "WorkflowRun",
+    "describedByWorkflow": "urn:example:workflow:biomass-mapping",
+    "wasEnactedBy": "urn:example:engine:calrissian",
+    "status": "successful",
+    "jobID": "a1b2c3d4-0000-4000-8000-000000000042",
+    "startedAtTime": "2026-07-30T10:00:00Z",
+    "endedAtTime": "2026-07-30T10:15:00Z",
+    "usedInput": [
+      { "id": "urn:example:dataset:input-2025" }
+    ]
+  },
+  "engine": {
+    "@id": "urn:example:engine:calrissian",
+    "@type": "WorkflowEngine",
+    "name": "Calrissian",
+    "version": "0.17.0"
+  },
+  "inputs": [
+    {
+      "id": "urn:example:dataset:input-2025",
+      "type": "Artifact",
+      "role": "input",
+      "mediaType": "application/json",
+      "wasOutputFrom": "urn:example:workflowrun:ingest-2025",
+      "checksum": {
+        "algorithm": "SHA-256",
+        "value": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "id": "urn:example:dataset:output-2026",
+      "type": "Artifact",
+      "role": "output",
+      "mediaType": "image/tiff; application=geotiff",
+      "wasOutputFrom": "urn:example:workflowrun:biomass-2026-07-30",
+      "checksum": {
+        "algorithm": "SHA-256",
+        "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ]
+}

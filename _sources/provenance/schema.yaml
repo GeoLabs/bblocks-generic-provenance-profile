@@ -1,0 +1,8 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: |
+  An OSPD / EOAP provenance bundle: a provenance chain of entities, activities
+  and agents, built directly on the canonical W3C PROV chain provided by
+  ogc.ogc-utils.prov. A payload may be a single provenance object or an array
+  forming the full chain.
+allOf:
+  - $ref: bblocks://ogc.ogc-utils.prov

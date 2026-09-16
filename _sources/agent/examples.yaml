@@ -1,0 +1,5 @@
+- title: Software agent
+  description: A software agent acting on behalf of an organization.
+  snippets:
+    - language: json
+      ref: examples/agent.json

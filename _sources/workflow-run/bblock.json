@@ -1,0 +1,19 @@
+{
+  "name": "OSPD Workflow Run",
+  "abstract": "Provenance of a workflow/process execution in the OSPD / EOAP context, profiling the Wf4Ever wfprov:WorkflowRun with mandatory links to the executed workflow and the enacting engine.",
+  "status": "under-development",
+  "version": "0.1.0",
+  "dateOfLastChange": "2026-07-30",
+  "dateTimeAddition": "2026-07-30T12:00:00Z",
+  "itemClass": "schema",
+  "itemIdentifier": "ogc.bbr.provenance.workflow-run",
+  "profileOf": ["ogc.bbr.wf4ever.wfprov.WorkflowRun"],
+  "dependsOn": ["ogc.bbr.wf4ever.wfprov.WorkflowRun"],
+  "sources": [
+    { "title": "Workflow Provenance Ontology (wfprov)", "link": "http://purl.org/wf4ever/wfprov" },
+    { "title": "OGC API - Processes Part 1: Core", "link": "https://docs.ogc.org/is/18-062r2/18-062r2.html" }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": ["provenance", "prov", "workflow", "wfprov", "eoap", "ospd"]
+}

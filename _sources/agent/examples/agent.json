@@ -1,0 +1,6 @@
+{
+  "id": "urn:example:agent:processing-service",
+  "provType": "prov:SoftwareAgent",
+  "name": "Biomass Processing Service v2.1",
+  "actedOnBehalfOf": "urn:example:agent:example-org"
+}

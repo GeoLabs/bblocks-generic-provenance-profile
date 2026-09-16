@@ -1,7 +1,9 @@
 #!/bin/bash
-# Process building blocks
+set -euo pipefail
+# Build Building Blocks register and docs
 if [ -f '.volumes' ]; then
   VOLUMES=$(while read -r line; do
+    if [[ -z "$line" ]]; then continue; fi
     if [[ "${line}" != /* ]]; then
       echo -n "-v ${PWD}/${line} "
     else
@@ -9,6 +11,9 @@ if [ -f '.volumes' ]; then
     fi
   done < .volumes)
 fi
-docker run -it --pull=always --rm --workdir /workspace -v "$(pwd):/workspace" ${VOLUMES} \
-  ghcr.io/opengeospatial/bblocks-postprocess:${BBP_IMAGE_TAG:-latest} \
+
+docker run -it --pull=always --rm --workdir /workspace -v "$(pwd):/workspace" ${VOLUMES:-} \
+  ghcr.io/opengeospatial/bblocks-postprocess \
   --clean true --base-url http://localhost:9090/register/
+
+echo "\nBuild complete. See build-local/ for outputs."

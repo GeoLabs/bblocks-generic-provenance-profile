@@ -1,0 +1,5 @@
+- title: Processing run activity
+  description: An activity that used an input dataset and was run by a service agent.
+  snippets:
+    - language: json
+      ref: examples/activity.json

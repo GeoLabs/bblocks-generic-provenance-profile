@@ -1,0 +1,6 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: |
+  A W3C PROV Agent for the OSPD / EOAP context. This is a thin profile that
+  builds on the canonical prov-schema agent sub-schema.
+allOf:
+  - $ref: bblocks://ogc.ogc-utils.prov-agent

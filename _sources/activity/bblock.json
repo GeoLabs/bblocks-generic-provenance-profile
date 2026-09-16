@@ -1,0 +1,18 @@
+{
+  "name": "PROV Activity",
+  "abstract": "A W3C PROV Activity: something that occurs over a period of time and acts upon or with entities.",
+  "status": "under-development",
+  "version": "0.1.0",
+  "dateOfLastChange": "2026-07-30",
+  "dateTimeAddition": "2026-07-30T12:00:00Z",
+  "itemClass": "schema",
+  "itemIdentifier": "ogc.bbr.provenance.activity",
+  "profileOf": ["ogc.ogc-utils.prov-activity"],
+  "sources": [
+    { "title": "PROV-O: The PROV Ontology", "link": "https://www.w3.org/TR/prov-o/" },
+    { "title": "PROV-DM: The PROV Data Model", "link": "https://www.w3.org/TR/prov-dm/" }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": ["provenance", "prov", "activity"]
+}

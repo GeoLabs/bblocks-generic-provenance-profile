@@ -1,0 +1,38 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: |
+  An integrated OSPD / EOAP execution provenance bundle. It harmonizes the three
+  aggregated registers into a single, self-contained record of a processing run:
+  a workflow run (Wf4Ever wfprov, built on W3C PROV), the EO artifacts it
+  consumed and produced (typed with EOAP custom types), and the workflow engine
+  that enacted it.
+type: object
+required:
+  - run
+  - engine
+  - outputs
+properties:
+  run:
+    description: The workflow execution this bundle describes.
+    x-jsonld-id: http://www.w3.org/ns/prov#hadMember
+    x-jsonld-type: '@id'
+    $ref: bblocks://ogc.bbr.provenance.workflow-run
+  engine:
+    description: The workflow engine that enacted the run.
+    x-jsonld-id: http://www.w3.org/ns/prov#wasAttributedTo
+    x-jsonld-type: '@id'
+    $ref: bblocks://ogc.bbr.wf4ever.wfprov.WorkflowEngine
+  inputs:
+    description: The EO artifacts consumed by the run.
+    type: array
+    x-jsonld-id: http://www.w3.org/ns/prov#hadMember
+    x-jsonld-type: '@id'
+    items:
+      $ref: bblocks://ogc.bbr.provenance.eoap-artifact
+  outputs:
+    description: The EO artifacts produced by the run.
+    type: array
+    minItems: 1
+    x-jsonld-id: http://www.w3.org/ns/prov#hadMember
+    x-jsonld-type: '@id'
+    items:
+      $ref: bblocks://ogc.bbr.provenance.eoap-artifact

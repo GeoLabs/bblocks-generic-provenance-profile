@@ -1,0 +1,5 @@
+- title: OSPD execution provenance bundle
+  description: A complete processing run with its workflow run, engine, input and output artifacts.
+  snippets:
+    - language: json
+      ref: examples/execution.json

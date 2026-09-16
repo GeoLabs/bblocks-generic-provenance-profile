@@ -1,0 +1,32 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: |
+  Provenance record of a workflow (or process) execution in the OSPD / EOAP
+  context. It profiles the Wf4Ever `wfprov:WorkflowRun` (which itself extends
+  W3C PROV `prov:Activity`) and, on top of it, requires the two links that make
+  an execution trace actionable for OSPD: the workflow description that was run
+  (`describedByWorkflow`) and the engine that enacted it (`wasEnactedBy`).
+allOf:
+  - $ref: bblocks://ogc.bbr.wf4ever.wfprov.WorkflowRun
+  - type: object
+    required:
+      - id
+      - describedByWorkflow
+      - wasEnactedBy
+      - startedAtTime
+      - endedAtTime
+      - status
+    properties:
+      status:
+        description: |
+          Terminal status of the run, using the OGC API - Processes job status
+          vocabulary. A provenance record only describes finished executions.
+        type: string
+        enum:
+          - successful
+          - failed
+          - dismissed
+        x-jsonld-id: https://example.org/bblocks-provenance/def/status
+      jobID:
+        description: Identifier of the OGC API - Processes job that carried out this run.
+        type: string
+        x-jsonld-id: https://example.org/bblocks-provenance/def/jobID

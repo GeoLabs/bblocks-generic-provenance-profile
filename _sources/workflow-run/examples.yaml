@@ -1,0 +1,5 @@
+- title: OSPD workflow run
+  description: A workflow execution linked to its workflow description and enacting engine.
+  snippets:
+    - language: json
+      ref: examples/workflow-run.json

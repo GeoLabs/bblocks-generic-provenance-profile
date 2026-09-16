@@ -1,0 +1,22 @@
+{
+  "name": "OSPD Execution Provenance",
+  "abstract": "An integrated OSPD / EOAP execution provenance bundle tying together a workflow run, its EO input/output artifacts and the enacting workflow engine, harmonizing W3C PROV, Wf4Ever and EOAP building blocks.",
+  "status": "under-development",
+  "version": "0.1.0",
+  "dateOfLastChange": "2026-07-30",
+  "dateTimeAddition": "2026-07-30T12:00:00Z",
+  "itemClass": "schema",
+  "itemIdentifier": "ogc.bbr.provenance.execution",
+  "dependsOn": [
+    "ogc.bbr.provenance.workflow-run",
+    "ogc.bbr.provenance.eoap-artifact",
+    "ogc.bbr.wf4ever.wfprov.WorkflowEngine"
+  ],
+  "sources": [
+    { "title": "Workflow Provenance Ontology (wfprov)", "link": "http://purl.org/wf4ever/wfprov" },
+    { "title": "OGC Best Practice for EO Application Package", "link": "https://docs.ogc.org/bp/20-089r1.html" }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": ["provenance", "prov", "wfprov", "eoap", "workflow", "ospd", "bundle"]
+}

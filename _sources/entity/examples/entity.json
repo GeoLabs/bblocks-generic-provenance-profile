@@ -1,0 +1,9 @@
+{
+  "id": "urn:example:dataset:output-2026",
+  "provType": "prov:Entity",
+  "name": "Processed biomass map 2026",
+  "generatedAtTime": "2026-07-30T10:15:00Z",
+  "wasGeneratedBy": "urn:example:activity:processing-run-42",
+  "wasDerivedFrom": "urn:example:dataset:input-2025",
+  "wasAttributedTo": "urn:example:agent:processing-service"
+}
