@@ -18,7 +18,7 @@ description: |
   - **[bblocks-wf4ever](https://github.com/ogcincubator/bblocks-wf4ever)**
     (`ogc.bbr.wf4ever.*`) — workflow-level provenance (wfdesc / wfprov / ro),
     e.g. `wfprov:WorkflowRun`, for retrospective execution provenance.
-  - **[bblocks-eoap-cct](https://github.com/ogcincubator/bblocks-eoap-cct)**
+  - **[bblocks-eoap-cct](https://github.com/GeoLabs/bblocks-eoap-cct)**
     (`eoap.cct.*`) — EOAP CWL custom types (STAC, GeoJSON, bbox) used to type the
     entities whose provenance is described.
 
@@ -38,7 +38,7 @@ imports:
   - default
   - https://ogcincubator.github.io/bblock-prov-schema/build/register.json
   - https://ogcincubator.github.io/bblocks-wf4ever/build/register.json
-  - https://ogcincubator.github.io/bblocks-eoap-cct/build/register.json
+  - https://geolabs.github.io/bblocks-eoap-cct/build/register.json
 
 options:
   generateProfiles: true
